@@ -9,7 +9,12 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-  
+
+      - name: "test"
+        - uses: pnpm/action-setup@v2
+          with:
+            version: 7
+
       - name: Install dependencies
         run: pnpm install
 
